@@ -1,0 +1,126 @@
+/* reset code.*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering -only needed for macs.
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context - only need for React or other JS frameworks.
+  */
+/* #root, #__next {
+    isolation: isolate;
+  } */
+
+
+/* wrapper */
+
+#wrapper {
+    margin: 4em auto auto auto;
+    width: 80%;    
+    background: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+}
+
+h1 {
+  margin-left: 1em;
+}
+
+/* wraps the code snippet */
+#wrapper pre {
+    height: 25em;
+    padding: 0.5em;
+    /* border: 2px solid grey; */
+    overflow: scroll;
+    background: #0073e6;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Adjusts the height of display window when button is clicked  */
+#pre.expanded {
+    height: auto;
+}
+
+/* This div wraps the buttons */
+.buttons {
+    height: auto;
+    padding: 1em 0;
+    margin-top: .5em;  
+    margin-left: 1em;
+}
+
+/* This code adds some styles to the buttons */
+#seeMoreBtn,
+#copy, #theme {
+    padding: 1em 2em;
+    color: #000;
+    background: #f0f0f0;
+    margin-left: 0;
+
+}
+
+
+height: 40px;
+padding: 0 2rem;
+margin-left:19.5%;
+margin-top: .5em;
+}
+
+*/

@@ -1,0 +1,17 @@
+#wrapper.dark  {
+    background: #0073e6;
+    color:white;
+}
+body.dark {
+    background: rgb(49, 49, 54);
+    color:orangered;
+}
+
+#pre.dark {
+    background: white;
+    color: #0073e6;
+}
+/* #pre.light {
+    background: #0073e6;
+    color: white;
+} */

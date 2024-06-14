@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <!-- <p id="myText">Mike is king</p> -->
+
+    <!-- <div id="wrapper"> -->
+        <div id="wrapper">
+        <h1>Add expand and copy buttons to code snippets</h1>
+          <!-- Begin pattern: facet list //-->
+          <pre id="pre"><code><xmp><h2 class="font-scale-1 facet-title">Filter</h2>
+    <a href="#" class="facet-clear"><i class="fa fa-times" aria-hidden="true"></i>Clear all</a>
+    <div class="list-group font-scale-minus-1 facet">
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-circle" aria-hidden="true"></i></span>
+          Option 1
+        </span>
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-dot-circle" aria-hidden="true"></i></span>
+          Option 2
+          <span class="sr-only">(Current)</span>
+        </span>
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-circle" aria-hidden="true"></i></span>
+          Option 3
+        </span>
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-circle" aria-hidden="true"></i></span>
+          Option 4
+        </span>
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-circle" aria-hidden="true"></i></span>
+          Option 5
+        </span>
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="item-label">
+          <span class="facet-control"><i class="far fa-circle" aria-hidden="true"></i></span>
+          Option 6
+        </span>
+      </a>
+    </div>
+    </xmp></code></pre>
+          <div class="buttons">
+            <button id="seeMoreBtn">Expand code</button>
+            <button id="copy">Copy text</button>
+            <button id="theme">Switch theme</button>
+          </div>
+        
+      </div>
+
+
+
+
+    <button class="btn" onclick="copyContent()">Copy!</button>
+    
+    <script>
+      let text = document.getElementById('wrapper').innerHTML;
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          console.log('Content copied to clipboard');
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      }
+    </script>
+
+</body>
+</html>
+
+
+
